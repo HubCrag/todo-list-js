@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Todo list</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<main id="app">
+		<div class="app__wrapper">
+			<div class="header">
+				Todo
+			</div>
+			<ul id="todo__list">
+				<li class="todo__item">
+					<label class="check">
+						<input class="checkbox" type="checkbox"></input>
+					</label>
+					<label class="title">Todo item</label>
+					<input class="textfield" type="text">
+					<button class="edit">Edit</button>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+			<button class="add__todo">Add Todo</button>
+			<form id="todo__form">
+				<span class="close"></span>
+				<input id="add__input" type="text" autocomplete="off" >
+				<button id="add__button" type="submit">Add</button>
+			</form>
+		</div>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>
